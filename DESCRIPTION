@@ -1,0 +1,36 @@
+Package: abdatool
+Title: ABDA Tool
+Version: 1.0.0
+Authors@R: 
+    person("Aline", "Metzler", email = "aline.metzler@zuerich.ch", role = c("aut", "cre"))
+Description: Shiny App that shows voting results for the City of Zurich.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.2),
+    data.table,
+    dplyr,
+    golem (>= 0.4.1),
+    icons,
+    janitor,
+    openxlsx,
+    pkgload,
+    purrr,
+    reactable,
+    shiny (>= 1.9.1),
+    shinycssloaders,
+    tidyr,
+    zuericolors,
+    zuericssstyle (>= 0.2.1)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Suggests: 
+    shinytest2,
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+Depends: 
+    R (>= 4.1)
+Remotes: 
+    github::mitchelloharawild/icons,
+    github::StatistikStadtZuerich/zuericssstyle
