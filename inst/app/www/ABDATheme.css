@@ -1,0 +1,33 @@
+/* ============================================================
+   ABDA – Abstimmungsdatenbank
+   Custom Styling für reactable Tabellen – v2
+   ============================================================ */
+
+/* Cursor pointer */
+.table-hover .rt-tbody .rt-tr:hover {
+  cursor: pointer;
+}
+
+/* Override button:hover when inside the reactable expander */
+button.rt-expander-button:hover {
+  background-color: transparent !important;
+}
+
+/* ── Expanded row + detail panel: visual grouping ────────────────────────── */
+
+/* Give the expanded outer row a grey background and a left accent border */
+.rt-tr-group:has(> .rt-tr.-expanded) > .rt-tr.-expanded {
+  border-left: 3px solid #0f05a0;
+}
+
+/* Match the detail panel so it looks like one connected block */
+.Details {
+  border-left: 3px solid #0f05a0;
+}
+
+/* Hide Ja-Anteil and Nein-Anteil columns on phone screens */
+@media (max-width: 600px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
